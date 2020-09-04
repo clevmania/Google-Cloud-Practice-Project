@@ -1,3 +1,4 @@
 # Overview
-
-<img src="screenshots/demo.gif" width="350"><img src="screenshots/demo_scroll.gif" width="350">
+Essential Google Cloud Infrastructure: Foundation
+<img src="screenshots/screenshot/Screen Shot 2020-09-03 at 9.33.40 AM.png" width="350">
+<img src="screenshots/screenshot/Screen Shot 2020-09-03 at 9.36.51 AM.png" width="350">
