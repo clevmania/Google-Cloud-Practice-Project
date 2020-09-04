@@ -51,7 +51,6 @@ gcloud app browse
 # it remains deployed, although you could instead replace the application 
 # with a simple page that says something like "not in service."
 
-# However, you can disable the application, which causes it to no longer be accessible to users.
-# gcloud projects delete
+
 
 
