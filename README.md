@@ -14,15 +14,18 @@ The Cloud challenge is divided in two parts:
 2 “Translation” of 2-3 selected labs from Console instructions to 100% command line instructions.
 
 # Solution
-The labs have been completed and the has screenshot provided in directory named screenshot
-You can view the screenshots [here](SCREENSHOTS.md)
+The screenshot to the completed labs is provided in directory named screenshot
+You can view the [screenshots](SCREENSHOTS.md)
 
 
 The translation of 3 console instructions have also been provided in the translations directory.
 The following Console Instructions were translated.
-    - Getting Started with Compute Engine
-    - Getting Started with Kubernetes Engine
-    - Getting Started with App Engine
-    - Getting Started with Cloud Storage and Cloud SQL
+- Getting Started with Compute Engine
+
+- Getting Started with Kubernetes Engine
+
+- Getting Started with App Engine
+
+- Getting Started with Cloud Storage and Cloud SQL
 
 
