@@ -9,20 +9,20 @@ export MY_SELECTED_ZONE=us-central1-c
 
 # Creates a VM Instance
 gcloud beta compute --project=$DEVSHELL_PROJECT_ID instances create my-vm-3 \
---zone=$VM_INSTANCE_ONE_ZONE --machine-type=e2-medium \
---subnet=default --network-tier=PREMIUM \
---maintenance-policy=MIGRATE \
---service-account=853061025177-compute@developer.gserviceaccount.com \
---tags=http-server --image=debian-9-stretch-v20200902 \
---image-project=debian-cloud --boot-disk-size=10GB \
---boot-disk-type=pd-standard --boot-disk-device-name=my-vm-1 \
---reservation-affinity=any
+    --zone=$VM_INSTANCE_ONE_ZONE --machine-type=e2-medium \
+    --subnet=default --network-tier=PREMIUM \
+    --maintenance-policy=MIGRATE \
+    --service-account=853061025177-compute@developer.gserviceaccount.com \
+    --tags=http-server --image=debian-9-stretch-v20200902 \
+    --image-project=debian-cloud --boot-disk-size=10GB \
+    --boot-disk-type=pd-standard --boot-disk-device-name=my-vm-1 \
+    --reservation-affinity=any
 
 gcloud compute --project=$DEVSHELL_PROJECT_ID firewall-rules create default-allow-http \
---direction=INGRESS --priority=1000 \
---network=default --action=ALLOW \
---rules=tcp:80 --source-ranges=0.0.0.0/0 \
---target-tags=http-server
+    --direction=INGRESS --priority=1000 \
+    --network=default --action=ALLOW \
+    --rules=tcp:80 --source-ranges=0.0.0.0/0 \
+    --target-tags=http-server
 
 # Task 2: Create a virtual machine using the gcloud command line
 
@@ -34,10 +34,10 @@ gcloud config set compute/zone $MY_SELECTED_ZONE
 
 # To create a VM instance called my-vm-2 in that zone
 gcloud compute instances create "my-vm-2" \
---machine-type "n1-standard-1" \
---image-project "debian-cloud" \
---image "debian-9-stretch-v20190213" \
---subnet "default"
+    --machine-type "n1-standard-1" \
+    --image-project "debian-cloud" \
+    --image "debian-9-stretch-v20190213" \
+    --subnet "default"
 
 # Task 3: Connect between VM instances
 
@@ -64,3 +64,8 @@ exit
 
 # To confirm that my-vm-2 can reach the web server on my-vm-1, at the command prompt on my-vm-2, execute this command:
 curl http://my-vm-1/
+
+# Copy the External IP address for my-vm-1
+# Now, paste the ip address into the address bar of a new browser tab
+gcloud compute instances list --zone=$VM_INSTANCE_ONE_ZONE
+

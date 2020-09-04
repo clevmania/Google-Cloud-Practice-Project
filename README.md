@@ -20,12 +20,9 @@ You can view the [screenshots](SCREENSHOTS.md)
 
 The translation of 3 console instructions have also been provided in the translations directory.
 The following Console Instructions were translated.
-- Getting Started with Compute Engine
+- [Getting Started with Compute Engine](translations/getting-started-with-app-engine.sh)
 
-- Getting Started with Kubernetes Engine
+- [Getting Started with Kubernetes Engine](translations/getting-started-with-gke.sh)
 
-- Getting Started with App Engine
-
-- Getting Started with Cloud Storage and Cloud SQL
-
+- [Getting Started with App Engine](translations/getting-started-with-app-engine.sh)
 
