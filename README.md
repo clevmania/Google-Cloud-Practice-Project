@@ -26,3 +26,6 @@ The following Console Instructions were translated.
 
 - [Getting Started with App Engine](translations/getting-started-with-app-engine.sh)
 
+- [Getting Started with Cloud Storage and Cloud SQL](translations/getting-started-with-cloud-storage-and-cloud-sql.sh)
+
+
