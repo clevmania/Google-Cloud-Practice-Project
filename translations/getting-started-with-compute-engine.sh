@@ -54,7 +54,7 @@ gcloud compute ssh $VM_INSTANCE_ONE
 sudo apt-get install nginx-light -y
 
 # Use sed command edit and add a custom message to the home page of the web server:
-sudo sed -i -e '/<h1>/a\<p>Hi From Ikechukwu</p>' /var/www/html/index.nginx-debian.html
+sudo sed -i -e '/<h1>/a\<p>Hi From Clevmania</p>' /var/www/html/index.nginx-debian.html
 
 # Confirm that the web server is serving your new page. At the command prompt on my-vm-1, execute this command:
 curl http://localhost/ 
